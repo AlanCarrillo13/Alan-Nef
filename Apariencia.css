@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: whitesmoke;
+    }
+
+    .wrapper{
+        width: 65vmin;
+        height: 70vmin;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        border-radius: 5px;
+        background: rgb(5, 143, 5);
+    }
+
+    h1 {
+        text-align: center;
+        background-color: black;
+        color: white; 
+        border-bottom: 1px solid #333; 
+        padding-bottom: 5px; 
+        margin-bottom: 5px; 
+    }
+    
+    footer {
+        margin-top: 20px; 
+        text-align: center;
+        background-color: #f1f1f1; 
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #resetButton, #pauseButton {
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #resetButton:hover, #pauseButton:hover {
+        background-color: red; 
+    }
+
+
+    .button-container {
+        display: flex;
+        justify-content: space-between; /* Espaciado uniforme entre los botones */
+        border: 1px solid #333; /* Borde entre los botones */
+        padding: 10px; /* Espaciado interno */
+    }
+    .detalles-juego{
+        color: black;;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 20px 27px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .game-board{
+        width: 100%;
+        height: 100%;
+        background: greenyellow;
+        display: grid;
+        grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    }
+
+    .game-board .manzana{
+        background: red;
+    }
+
+    .game-board .cabeza_serpiente{
+        background: cornflowerblue;
+    }
